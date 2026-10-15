@@ -22,6 +22,7 @@ header nav ul {
 
 header nav ul li {
     list-style-type: none;
+    padding-left: 15px;
     padding-right: 15px;
 }
 
@@ -49,23 +50,29 @@ header nav ul li a {
   height: 50px;
   max-width: 600px;
   width: 100%;
-  border: 2px solid #ccc;
+
   border-radius: 24px;
-  /*overflow: ;*/
   font-family: sans-serif;
   position: relative;
 }
 
 #search-bar {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     height: 100%;
     width: 100%;
     padding-left: 50px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 25px;
-    color: transparent;
+}
+
+.search-bar input:hover {
+    cursor: text;
+}
+
+.image-search:active {
+    cursor: text;
 }
 
 .tools {
