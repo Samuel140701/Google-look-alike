@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(115, 65, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #493545;
     color: #202124;
     display: flex;
     flex-direction: column;
@@ -17,12 +17,12 @@ header nav ul {
     margin: 1rem 2rem 0 0;
     display: flex;
     justify-content: flex-end;
-    gap: 2rem;
-    font-size: 1.1rem;
+    line-height: normal;
 }
 
 header nav ul li {
     list-style-type: none;
+    padding-right: 15px;
 }
 
 header nav ul li a {
@@ -39,29 +39,86 @@ header nav ul li a {
     flex: 1;
 }
 
-h1 {
-    font-size: 5rem;
-    margin-bottom: 2rem;
-    color: #c28ec6;
+.logo img {
+    height: 7rem;
+    margin-top: -50vh;
 }
 
 .search-container {
   display: flex;
+  height: 50px;
   max-width: 600px;
   width: 100%;
   border: 2px solid #ccc;
   border-radius: 24px;
-  overflow: hidden;
+  /*overflow: ;*/
   font-family: sans-serif;
   position: relative;
 }
 
 #search-bar {
     position: absolute;
+    z-index: 0;
+    height: 100%;
     width: 100%;
-    padding: 12px 20px 12px 45px;
+    padding-left: 50px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 25px;
+    color: transparent;
 }
+
+.tools {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+    padding: 5px;
+    width: inherit;
+    font-size: small;
+    gap: 10px;
+}
+
+.tools img {
+    height: 30px;
+    max-width: 30px;
+    padding: 5px;
+}
+
+.tools .plus {
+    margin-right: auto;
+}
+
+.plus:hover {
+    background-color: lightgrey;
+    border-radius: 50px;
+}
+
+.tools .mic:hover {
+   background-color: lightgrey;
+   border-radius: 50px;
+}
+
+.image-search:hover {
+    background-color: lightgrey;
+    border-radius: 50px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+span:hover {
+    background-color: lightgrey;
+}
+
+
+
 
